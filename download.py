@@ -99,7 +99,7 @@ def download_one_zone(url, output_directory):
 def download_zone_files(urls, working_directory):
 
     # The zone files will be saved in a sub-directory
-    output_directory = working_directory + "/zonefiles"
+    output_directory = working_directory + "/other"
 
     if not os.path.exists(output_directory):
         os.makedirs(output_directory)
