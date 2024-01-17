@@ -2,10 +2,12 @@
 .idea/**
 .idea/
 *.iml
-
+.env
 config.json
 
 zonefiles/
 zonefiles/**
 
 __*
+
+data/*
