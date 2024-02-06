@@ -8,8 +8,8 @@ from itertools import islice
 
 
 username, password, authen_base_url, czds_base_url, working_directory = config()
-data_dir = os.path.join(working_directory, "zonefiles")
-output_dir = os.path.join(working_directory, "split_zonefiles")
+data_dir = os.path.join(working_directory, "data/zonefiles")
+output_dir = os.path.join(working_directory, "data/split_zonefiles")
 shutil.rmtree(output_dir, ignore_errors=True)
 os.makedirs(output_dir, exist_ok=True)
 

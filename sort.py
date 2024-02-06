@@ -8,14 +8,14 @@ from itertools import islice
 import gzip
 
 username, password, authen_base_url, czds_base_url, working_directory = config()
-data_dir = os.path.join(working_directory, "split_zonefiles")
+data_dir = os.path.join(working_directory, "data/split_zonefiles")
 
 file_list = glob.glob(data_dir + "/*")
 
-TLD = 'com'
+TLD = 'app'
 SORTBY = 'alpha'
 
-output_dir = os.path.join(working_directory, f'{TLD}_{SORTBY}')
+output_dir = os.path.join(working_directory, f'data/{TLD}_{SORTBY}')
 shutil.rmtree(output_dir, ignore_errors=True)
 os.makedirs(output_dir, exist_ok=True)
 
